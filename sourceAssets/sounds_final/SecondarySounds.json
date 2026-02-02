@@ -1,0 +1,170 @@
+{
+  "urls": [
+    "SecondarySounds.ac3",
+    "SecondarySounds.mp3",
+    "SecondarySounds.m4a",
+    "SecondarySounds.ogg"
+  ],
+  "sprite": {
+    "transition": [
+      0,
+      3696
+    ],
+    "bigWin": [
+      5000,
+      4560
+    ],
+    "counterEnd": [
+      11000,
+      3648
+    ],
+    "counterLoop": [
+      16000,
+      8976, true
+    ],
+    "megaWin": [
+      26000,
+      5232
+    ],
+    "superMegaWin": [
+      33000,
+      5232
+    ],
+    "superMegaWinDissapear": [
+      40000,
+      3144
+    ],
+    "totalWin": [
+      45000,
+      3264
+    ],
+    "ultraWin": [
+      50000,
+      5232
+    ],
+    "fsAwardPopup": [
+      65000,
+      3744
+    ],
+    "showFSendpopup": [
+      62000,
+      1968
+    ],
+    "fsWinPopup": [
+      70000,
+      3072
+    ],
+    "gambleAppear": [
+      75000,
+      4586
+    ],
+    "gambleCardReveal": [
+      81000,
+      150
+    ],
+    "gambleCardRotation": [
+      83000,
+      1281,true
+    ],
+    "gambleContinueBtn": [
+      86000,
+      1500
+    ],
+    "gambleLose": [
+      89000,
+      2233
+    ],
+    "gambleWin": [
+      93000,
+      2233
+    ],
+    "HandWJackpotSymbolLands": [
+      97000,
+      2208
+    ],
+    "HandWinCounter": [
+      101000,
+      4488
+    ],
+    "HandWinCounterEnd": [
+      107000,
+      1944
+    ],
+    "HandWnewSymbolLands": [
+      110000,
+      2208
+    ],
+    "HandWtriggered": [
+      114000,
+      3960
+    ],
+    "backgroundFsHandW": [
+      119000,
+      47976,true
+    ],
+    "coinMovesToLadder": [
+      168000,
+      2088
+    ],
+    "glowingBallSound": [
+      172000,
+      1008
+    ],
+    "jackpotBoxSound": [
+      175000,
+      2208
+    ],
+    "jackpotPopUp": [
+      179000,
+      4560
+    ],
+    "jackpotUpgradeSound": [
+      185000,
+      4440
+    ],
+    "ladderValueSound": [
+      191000,
+      2208
+    ],
+    "lastCoinAdded": [
+      195000,
+      2208
+    ],
+    "anticipation": [
+      199000,
+      4800
+    ],
+    "aSym": [
+      205000,
+      3960
+    ],
+    "bSym": [
+      210000,
+      3960
+    ],
+    "bonusSym": [
+      215000,
+      3624
+    ],
+    "bonusSymbolLand": [
+      220000,
+      1968
+    ],
+    "cSym": [
+      223000,
+      3960
+    ],
+    "dSym": [
+      228000,
+      3960
+    ],
+    "lowPaySym": [
+      233000,
+      3432
+    ],
+    "wildSym": [
+      238000,
+      2688
+    ]
+  }
+}
