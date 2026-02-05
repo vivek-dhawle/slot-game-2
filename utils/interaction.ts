@@ -48,7 +48,7 @@ class Transitions{
                 texture=trueMode
             }
             element.changeTexture(texture)
-            console.log(mode)
+           
             mode.value=!mode.value
             if(cb)cb()
             

@@ -25,7 +25,7 @@ class createGame extends Container{
     private playState:any={value:true}
     private autoState:object={value:true}
     private turboState:object={value:true}
-    private playAnimation:boolean=false
+    
 
     private reels:createReels
     private app:any
@@ -71,17 +71,20 @@ class createGame extends Container{
         this.transit.clickTransition(this.playBtn,'spinD','spin',this.playState,()=>{
              this.Accounts.decreaseBalnce(this.val)
                 this.text.text=`$${this.Accounts.getBalance()}\nBalance`
-                this.playAnimation=true
-                //this.reels.spinning=true
+                
+                this.reels.playAnimation=true
+                this.reels.spinning=true
                 this.reels.buildBR();
-            setTimeout(()=>{
-                this.playBtn.changeTexture('spin')
-                this.playState.value=true
-                this.playAnimation=false
-                this.reels.spinning=false
-                this.reels.buildReel()
 
-            },3000)
+
+            
+                
+            setTimeout(()=>{
+                this.playState.value=true
+                this.reels.spinning=false
+                this.playBtn.changeTexture('spin')
+                
+            },2000)
         })
 
         this.transit.clickTransition(this.autoPlay,'autoSpinD','autoSpin',this.autoState)
@@ -146,6 +149,7 @@ class createGame extends Container{
            
             this.val+=20
             this.stakeValue.text=`$${this.val}\n stake`
+            this.stakeValue.size=this.stakeValue.size*0.6
             //this.deccState.value=true
             
             if(this.val>=20)this.decStake.changeTexture('minus')
@@ -182,9 +186,17 @@ class createGame extends Container{
         this.buildPlayPanelButton()
         this.buildAccountPanel()
         this.buildStakePanel()
+
+
+
         this.app.ticker.add(()=>{
-            if(this.playAnimation){
-                this.reels.playAnimation()
+            
+            if(this.reels.playAnimation){
+                
+                this.reels.startAnimation()
+            }
+            if(this.reels.bringDown){
+                this.reels.buildanimateDown()
             }
         })
 

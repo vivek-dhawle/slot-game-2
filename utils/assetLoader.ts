@@ -77,10 +77,10 @@ class AssetsLoader{
             
 
         ]) 
-        console.log(AssetsLoader.Asset)
+        
     }
     static getAsset(val:string):Texture{
-        console.log(AssetsLoader.Asset[val])
+      
         return AssetsLoader.Asset[val]
     }
 
