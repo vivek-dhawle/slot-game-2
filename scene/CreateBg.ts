@@ -1,4 +1,4 @@
-import createContainer from "../utils/createConatiner";
+import createContainer from "../utils/CreateConatiner";
 import { Container,BlurFilter } from "pixi.js";
 
 class CreateBg extends Container {
@@ -10,7 +10,6 @@ class CreateBg extends Container {
 
     constructor(app:any){
         super()
-
         this.app=app
         this.bg=new createContainer('bg')
         this.bg1=new createContainer('bg')
@@ -22,11 +21,7 @@ class CreateBg extends Container {
         this.addChild(this.bg,this.bg1);
 
     }
-
     public buildBg(){
-        
-
-        
         //this.bg.position.set(this.app.screen.width/2,this.app.screen.height/2)
         this.bg.scale.set(0.6,0.6)
 

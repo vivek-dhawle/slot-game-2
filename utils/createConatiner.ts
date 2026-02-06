@@ -1,5 +1,5 @@
 import {Container,Texture,Sprite} from 'pixi.js'
-import AssetsLoader from './assetLoader'
+import AssetsLoader from './AssetLoader'
 class createContainer extends Container{
     private sprite:Sprite|null
     private bounds:any
@@ -7,7 +7,7 @@ class createContainer extends Container{
         super()
         this.sprite=null
         if (texture) {
-            this.sprite=new Sprite(AssetsLoader.getAsset(texture))
+            this.sprite=Sprite.from(texture)
             this.sprite.anchor.set(0.5);
             //this.sprite.scale.set(0.5)
             this.addChild(this.sprite)

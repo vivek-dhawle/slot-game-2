@@ -1,8 +1,8 @@
-import BuildApp from '../utils/intializer.ts'
-import createIntro from '../scene/introScene.ts'
-import createBg from'../scene/bgScene.ts'
-//import introScene from '../scene/introScene.ts'
-import createGame from '../scene/gameScene.ts'
+import BuildApp from '../utils/BuildApp.ts'
+import createIntro from '../scene/CreateIntro.ts'
+import createBg from'../scene/CreateBg.ts'
+import CreateIntro from '../scene/CreateIntro.ts'
+import createGame from '../scene/CreateGame.ts'
 
 const Buildapp:any=new BuildApp()
 

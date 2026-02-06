@@ -1,5 +1,5 @@
 import  * as PIXI from 'pixi.js'
-import AssetsLoader from './assetLoader'
+import AssetsLoader from './AssetLoader'
 
 class BuildApp {
     static app:PIXI.Application

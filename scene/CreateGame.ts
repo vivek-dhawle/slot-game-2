@@ -1,9 +1,9 @@
-import createContainer from "../utils/createConatiner";
-import type CreateBg from "./bgScene";
-import Transitions from '../utils/interaction.ts'
+import createContainer from "../utils/CreateConatiner.ts";
+import type CreateBg from "./CreateBg.ts";
+import Transitions from '../utils/Transitions.ts'
 import { Container,Text} from "pixi.js";
 import Account from '../utils/accounts.ts'
-import createReels from './reelsScene.ts'
+import CreateReels from './CreateReels.ts'
 
 class createGame extends Container{
     private reelContainer
@@ -23,11 +23,11 @@ class createGame extends Container{
     private stakeValue:any
     private val:number=20
     private playState:any={value:true}
-    private autoState:object={value:true}
+    private autoState:any={value:true}
     private turboState:object={value:true}
     
 
-    private reels:createReels
+    private reels:CreateReels
     private app:any
 
     constructor(app:any){
@@ -36,7 +36,7 @@ class createGame extends Container{
         this.transit=new Transitions()
 
         this.Accounts=new Account()
-        this.reels=new createReels(app)
+        this.reels=new CreateReels(app)
         this.playContainer=new createContainer()
         this.accountContainer=new createContainer()
         this.stakeContainer=new createContainer()
@@ -64,9 +64,11 @@ class createGame extends Container{
 
 
         this.transit.hoverTransition(this.playBtn,'spinH','spin')
-        this.transit.hoverTransition(this.autoPlay,'autoSpinH','autoSpin')
+        this.transit.hoverTransition(this.autoPlay,'autoSpinH','autoSpin','autoSpinD','autoSpinD',this.autoState)
         this.transit.hoverTransition(this.turbo,'turboH','turbo')
 
+
+       
 
         this.transit.clickTransition(this.playBtn,'spinD','spin',this.playState,()=>{
              this.Accounts.decreaseBalnce(this.val)
@@ -76,18 +78,24 @@ class createGame extends Container{
                 this.reels.spinning=true
                 this.reels.buildBR();
 
-
-            
+                this.playBtn.children[0].eventMode='none'
+            setTimeout(()=>{
+                 this.reels.buildReel(false)
+            this.reels.spinning=false
+            //this.reels.playAnimation=false
+            this.reels.bringDown=true   
+            },1500)
                 
             setTimeout(()=>{
                 this.playState.value=true
                 this.reels.spinning=false
                 this.playBtn.changeTexture('spin')
+                this.playBtn.children[0].eventMode='static'
                 
             },2000)
         })
 
-        this.transit.clickTransition(this.autoPlay,'autoSpinD','autoSpin',this.autoState)
+        this.transit.clickTransition(this.autoPlay,'autoSpinD','autoSpin',this.autoState,)
         this.transit.clickTransition(this.turbo,'turboD','turbo',this.turboState)
         
 
@@ -197,6 +205,7 @@ class createGame extends Container{
             }
             if(this.reels.bringDown){
                 this.reels.buildanimateDown()
+                this.reels.checkWin()
             }
         })
 

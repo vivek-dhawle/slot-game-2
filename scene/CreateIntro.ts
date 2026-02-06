@@ -1,8 +1,8 @@
-import createContainer from "../utils/createConatiner";
+import createContainer from "../utils/CreateConatiner.ts";
 import { Container,BlurFilter } from "pixi.js";
-import BuildApp from "../utils/intializer";
-import type CreateBg from "./bgScene";
-import Transitions from '../utils/interaction.ts'
+import BuildApp from "../utils/BuildApp.ts";
+import type CreateBg from "./CreateBg.ts";
+import Transitions from '../utils/Transitions.ts'
 
 class CreateIntro extends Container {
     private frame:createContainer
@@ -34,7 +34,6 @@ class CreateIntro extends Container {
     }
 
     public buildIntro(bg:CreateBg,cb:Function){
-
         this.addChild(this.frame,this.lBtn,this.rBtn,this.playBtn,this.logo,this.aFrame,this.bFrame)
         bg.addChild(this)
 
