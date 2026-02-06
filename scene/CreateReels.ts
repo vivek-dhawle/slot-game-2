@@ -1,12 +1,11 @@
 import createContainer from "../utils/CreateConatiner.ts";
-import type CreateBg from "./CreateBg.ts";
-import Transitions from '../utils/Transitions.ts'
-import { Container,Text,Graphics} from "pixi.js";
-import Account from '../utils/Accounts.ts'
+
+import { Container,Graphics} from "pixi.js";
+
 
 
 class CreateReels extends Container{
-    private maskConatiner:createContainer
+    
     private masky:Graphics
     private slotContainer:Container
     slot1:createContainer
@@ -149,7 +148,7 @@ class CreateReels extends Container{
 
     constructor(app:any){
         super()
-        this. maskConatiner=new createContainer()
+       
         this.masky=new Graphics()
 
         this.slotContainer=new Container()
@@ -270,7 +269,7 @@ class CreateReels extends Container{
         } else {
             const i=Math.floor(Math.random()*this.mockData.length)
             const ans=this.mockData[i]
-            console.log(ans)
+        
             this.winarr.length=0
 
             this.createReel1(this.slot1,this.symbol,this.arr1,ans[0])
@@ -299,7 +298,7 @@ class CreateReels extends Container{
         //     this.bringDown=true        
         // }else{
             arr.forEach((ele:any)=>{
-                //console.log('dgdgegergegege',ele.y)
+                //('dgdgegergegege',ele.y)
                 ele.y+=speed;
                 if (ele&&ele.y>=this.masky.height+400){
                     ele.destroy();
@@ -313,7 +312,7 @@ class CreateReels extends Container{
     private animateReel(arr:any,speed:number){
             
             arr.forEach((ele:any)=>{
-                //console.log('dgdgegergegege',ele.y)
+                //('dgdgegergegege',ele.y)
                 ele.y+=speed;
                 if (ele&&ele.y>=this.masky.height+400){
                     ele.destroy();
@@ -365,14 +364,14 @@ class CreateReels extends Container{
     }
 
     checkWin(){
-        console.log(this.winarr)
+        (this.winarr)
         const arr=[]
 
         for(let j=0;j<this.winLines.length;j++){
             let win=true
             for(let i=0;i<this.winLines[j].length;i++){
                 if(this.winarr[this.winLines[j][0]]!=this.winarr[this.winLines[j][i]]){
-                    console.log(this.winLines[j][i],this.winarr[this.winLines[j][i]])
+                    (this.winLines[j][i],this.winarr[this.winLines[j][i]])
                     win=false
                     
                     break
@@ -380,14 +379,14 @@ class CreateReels extends Container{
             
             }
             if(win){
-                console.log('win',this.winLines[j])
+                
                 arr.push(this.winLines[j])
             }
         }
         if(arr.length>0){
         this.animateWin(0.6,arr,100)}
         //this.animateWin(1)
-        //console.log(this.winarr)
+        //(this.winarr)
 
     }
 
@@ -404,27 +403,27 @@ class CreateReels extends Container{
         for(let i=0;i<winLines.length;i++){
             let index=winLines[i]%5
             if(winLines[i]<=4){
-                //console.log(i)
+                //(i)
                 this.slot1.children[index].alpha=childAlpha
                 this.slot1.children[index].scale.set(scale)
             }
             if(winLines[i]>4&&winLines[i]<=9){
-                //console.log(i)
+                //(i)
                 this.slot2.children[index].alpha=childAlpha
                 this.slot2.children[index].scale.set(scale)
             }
             if(winLines[i]>9&&winLines[i]<=14){
-                //console.log(i)
+                //(i)
                 this.slot3.children[index].alpha=childAlpha
                 this.slot3.children[index].scale.set(scale)
             }
             if(winLines[i]>14&&winLines[i]<=19){
-                //console.log(i)
+                //(i)
                 this.slot4.children[index].alpha=childAlpha
                 this.slot4.children[index].scale.set(scale)
             }
             if(winLines[i]>19&&winLines[i]<=24){
-                //console.log(i)
+                //(i)
                 this.slot5.children[index].alpha=childAlpha
                 this.slot5.children[index].scale.set(scale)
             }
@@ -433,7 +432,7 @@ class CreateReels extends Container{
 
     animateWin(conAlpha:any,winLines:any,childAlpha:any){
         this.setAlpha(conAlpha)
-        //console.log(winLines)
+        
         let time=0
         winLines.forEach((winLine:any)=>{
             setTimeout(()=>{this.setWinLine(winLine,childAlpha,1.3)},time)

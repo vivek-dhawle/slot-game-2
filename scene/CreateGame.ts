@@ -16,7 +16,7 @@ class createGame extends Container{
     private stake:createContainer
     private Accounts:Account
     private playContainer:createContainer
-    private accountContainer:createContainer
+    
     private stakeContainer:createContainer
     private transit:Transitions
     private text:any
@@ -38,7 +38,7 @@ class createGame extends Container{
         this.Accounts=new Account()
         this.reels=new CreateReels(app)
         this.playContainer=new createContainer()
-        this.accountContainer=new createContainer()
+        
         this.stakeContainer=new createContainer()
 
         this.reelContainer=new createContainer('reelFrame')

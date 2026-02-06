@@ -24,10 +24,8 @@ class CreateBg extends Container {
     public buildBg(){
         //this.bg.position.set(this.app.screen.width/2,this.app.screen.height/2)
         this.bg.scale.set(0.6,0.6)
-
         //this.bg1.position.set(this.app.screen.width/2,this.app.screen.height/2)
         this.bg1.scale.set(0.5,0.55)
-
         this.blurfltr=new BlurFilter()
         this.blurfltr.strength=12
         this.bg.filters=[this.blurfltr]

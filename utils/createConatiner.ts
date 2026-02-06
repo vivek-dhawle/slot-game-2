@@ -1,4 +1,4 @@
-import {Container,Texture,Sprite} from 'pixi.js'
+import {Container,Sprite} from 'pixi.js'
 import AssetsLoader from './AssetLoader'
 class createContainer extends Container{
     private sprite:Sprite|null

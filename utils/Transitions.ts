@@ -1,6 +1,6 @@
-import AssetLoader from './AssetLoader.ts'
+
 import createContainer from './CreateConatiner.ts'
-import {Texture} from 'pixi.js'
+
 class Transitions{
     hoverTransition(element:createContainer,truetransitSprite:string,truebaseSprite:string,falsetransitSprite?:string|null,falsebaseSprite?:string|null,mode?:any,cb?:Function|null){
         element.children[0].eventMode='static'
@@ -10,7 +10,7 @@ class Transitions{
             if (mode&&falsetransitSprite){
                  texture=mode.value?truetransitSprite:falsetransitSprite;
             } else {
-                //console.log('dfgbgbsdfvf',mode,falsetransitSprite)
+                //('dfgbgbsdfvf',mode,falsetransitSprite)
                 texture=truetransitSprite;
             }
             element.changeTexture(texture)

@@ -1,6 +1,6 @@
 import createContainer from "../utils/CreateConatiner.ts";
-import { Container,BlurFilter } from "pixi.js";
-import BuildApp from "../utils/BuildApp.ts";
+import { Container} from "pixi.js";
+
 import type CreateBg from "./CreateBg.ts";
 import Transitions from '../utils/Transitions.ts'
 
@@ -12,15 +12,15 @@ class CreateIntro extends Container {
     private logo:createContainer
     private aFrame:createContainer
     private bFrame:createContainer
-    private app:any
+
     private transit:Transitions
 
 
 
-    constructor(app:any){
+    constructor(){
         super()
         this.transit=new Transitions()
-        this.app=app
+
     
         this.frame=new createContainer('frame1')
         this.lBtn=new createContainer('lBtn')
