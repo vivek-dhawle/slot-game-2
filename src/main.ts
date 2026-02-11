@@ -24,11 +24,12 @@ const game:createGame=new createGame(app)
 bg.buildBg()
 
 
-intro.buildIntro(bg)
+//intro.buildIntro(bg)
 intro.playBtn.on('startPlay',()=>{
     game.buildGame()
     bg.addChild(game)
 })
 
-
+game.buildGame()
+    bg.addChild(game)
 app.stage.addChild(bg)

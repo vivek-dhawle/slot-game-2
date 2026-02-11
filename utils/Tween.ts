@@ -2,8 +2,9 @@ import {Application} from "pixi.js";
 
 
 import type {ReelData} from "./ReelData"
+import createContainer from "./CreateConatiner";
 
-class Tween{
+class Tween extends createContainer{
     
     private reels: ReelData[]=[]
 
@@ -34,6 +35,7 @@ class Tween{
     ]
 
     constructor(app:Application,symbol:string[],reels:ReelData[],tweening:any) {
+        super()
         this.app = app
         this.symbol=symbol
         this.reels=reels
@@ -78,6 +80,7 @@ class Tween{
     public startSpin() {
         if (this.running)return
         this.running=true
+        this.emit('startSpin')
         for (let i=0;i<this.reels.length;i++) {
             const ele=this.reels[i]
             const target=ele.position+20+i*5
@@ -88,7 +91,8 @@ class Tween{
 
     public spinComplete() {
         this.running=false
-
+        console.log('h1')
+        this.emit('changeBtn')
     }
 
     public tweenTo(object:any,target:number,time:number,easing:any,oncomplete?:Function){

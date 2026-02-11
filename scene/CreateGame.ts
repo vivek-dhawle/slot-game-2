@@ -60,32 +60,47 @@ class createGame extends Container{
         this.playContainer.position.set(0,300)
 
 
-
+        this.reels.Tween.on('startSpin',()=>{
+            this.Accounts.decreaseBalnce(this.val)
+                this.text.text=`$${this.Accounts.getBalance()}\nBalance`
+        })
         this.transit.hoverTransition(this.playBtn,'spineBtn_main_hover.png','spineBtn_main_normal.png')
         this.transit.hoverTransition(this.autoPlay,'menu_autospin_hover.png','menu_autospin_normal.png','menu_autospin_down.png','menu_autospin_down.png',this.autoState)
         this.transit.hoverTransition(this.turbo,'menu_quickSpin_hover.png','menu_quickSpin_normal.png','menu_quickSpin_down.png','menu_quickSpin_down.png',this.turboState)
        
 
         this.transit.clickTransition(this.playBtn,'spineBtn_main_disabled.png','spineBtn_main_normal.png',this.playState,()=>{
-             this.Accounts.decreaseBalnce(this.val)
-                this.text.text=`$${this.Accounts.getBalance()}\nBalance`
+             
 
                 this.playBtn.children[0].eventMode='none'
             
                 this.reels.Tween.startSpin()
-            setTimeout(()=>{
+            this.reels.Tween.on('changeBtn',()=>{
                 this.playState.value=true
 
                 this.playBtn.changeTexture('spineBtn_main_normal.png')
                 this.playBtn.children[0].eventMode='static'
                 
-            },4000)
+            },2000)
         })
+        let id:any=null
+
+        
 
         this.transit.clickTransition(this.autoPlay,'menu_autospin_down.png','menu_autospin_normal.png',this.autoState,()=>{
-            setInterval(()=>{this.reels.Tween.startSpin()
-
-            },2000)
+            if (!this.autoState.value) {
+             
+                this.reels.Tween.startSpin()
+                id=setInterval(()=>{
+                    this.reels.Tween.startSpin()
+                },2000)
+                this.playBtn.changeTexture('spineBtn_main_disabled.png')
+            } else {
+                
+                this.playBtn.changeTexture('spineBtn_main_normal.png')
+                clearInterval(id)
+                
+            }
         })
         this.transit.clickTransition(this.turbo,'menu_quickSpin_down.png','menu_quickSpin_normal.png',this.turboState)
         
