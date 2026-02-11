@@ -5,14 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@assetpack/core": "^1.7.0",
+    "@assetpack/plugin-manifest": "^0.8.0",
     "typescript": "~5.9.3",
     "vite": "^7.2.4"
   },
   "dependencies": {
-    "pixi.js": "^8.15.0"
+    "@pixi/assets": "^7.4.3",
+    "pixi.js": "^8.16.0"
   }
 }

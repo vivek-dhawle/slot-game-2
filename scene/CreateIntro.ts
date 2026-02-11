@@ -1,6 +1,6 @@
 import createContainer from "../utils/CreateConatiner.ts";
 import { Container} from "pixi.js";
-
+import AssetsLoader from "../utils/AssetLoader.ts";
 import type CreateBg from "./CreateBg.ts";
 import Transitions from '../utils/Transitions.ts'
 
@@ -8,7 +8,7 @@ class CreateIntro extends Container {
     private frame:createContainer
     private lBtn:createContainer
     private rBtn:createContainer
-    private playBtn:createContainer
+    public playBtn:createContainer
     private logo:createContainer
     private aFrame:createContainer
     private bFrame:createContainer
@@ -20,20 +20,21 @@ class CreateIntro extends Container {
     constructor(){
         super()
         this.transit=new Transitions()
+        AssetsLoader.loadIntro()
 
     
-        this.frame=new createContainer('frame1')
-        this.lBtn=new createContainer('lBtn')
-        this.rBtn=new createContainer('rBtn')
-        this.playBtn=new createContainer('pNBtn')
-        this.logo=new createContainer('logo')
-        this.aFrame=new createContainer('aFrame')
-        this.bFrame=new createContainer('bFrame')
+        this.frame=new createContainer('frame1.png')
+        this.lBtn=new createContainer('ptLeftArrowBtn.png')
+        this.rBtn=new createContainer('ptRightArrowBtn.png')
+        this.playBtn=new createContainer('prePlayBtn_normal.png')
+        this.logo=new createContainer('gameLogo.png')
+        this.aFrame=new createContainer('pagerMaker.png')
+        this.bFrame=new createContainer('pagerBase.png')
 
         //this.addChild(this.frame)
     }
 
-    public buildIntro(bg:CreateBg,cb:Function){
+    public buildIntro(bg:CreateBg){
         this.addChild(this.frame,this.lBtn,this.rBtn,this.playBtn,this.logo,this.aFrame,this.bFrame)
         bg.addChild(this)
 
@@ -54,27 +55,27 @@ class CreateIntro extends Container {
         this.playBtn.scale.set(0.4)
         this.playBtn.position.set(0,300)
 
-        this.transit.hoverTransition(this.playBtn,'pDBtn','pNBtn')
+        this.transit.hoverTransition(this.playBtn,'prePlayBtn_down.png','prePlayBtn_normal.png')
 
-        this.transit.clickTransition(this.playBtn,'pDBtn','pNBtn',{value:true},()=>{bg.removeChild(this)
-            cb()
+        this.transit.clickTransition(this.playBtn,'prePlayBtn_down.png','prePlayBtn_normal.png',{value:true},async ()=>{bg.removeChild(this)
+             this.playBtn.emit('startPlay')
         })
 
         
-        this.transit.clickTransition(this.lBtn,'lBtn','lBtn',{value:true},
+        this.transit.clickTransition(this.lBtn,'ptLeftArrowBtn.png','ptLeftArrowBtn.png',{value:true},
             ()=>{
-                this.frame.changeTexture('frame1')
-                this.aFrame.changeTexture('aFrame')
-                this.bFrame.changeTexture('bFrame')
+                this.frame.changeTexture('frame1.png')
+                this.aFrame.changeTexture('pagerMaker.png')
+                this.bFrame.changeTexture('pagerBase.png')
                 this.frame.scale.set(0.5)
             }
         )
 
-        this.transit.clickTransition(this.rBtn,'rBtn','rBtn',{value:true},
+        this.transit.clickTransition(this.rBtn,'ptRightArrowBtn.png','ptRightArrowBtn.png',{value:true},
             ()=>{
-                this.frame.changeTexture('frame2')
-                this.bFrame.changeTexture('aFrame')
-                this.aFrame.changeTexture('bFrame')
+                this.frame.changeTexture('frame2.png')
+                this.bFrame.changeTexture('pagerMaker.png')
+                this.aFrame.changeTexture('pagerBase.png')
                 this.frame.scale.set(0.4)
             }
         )

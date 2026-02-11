@@ -1,7 +1,7 @@
 import createContainer from "../utils/CreateConatiner.ts";
-import type CreateBg from "./CreateBg.ts";
+
 import Transitions from '../utils/Transitions.ts'
-import { Container,Text} from "pixi.js";
+import { Container,Text,Application} from "pixi.js";
 import Account from '../utils/accounts.ts'
 import CreateReels from './CreateReels.ts'
 
@@ -19,18 +19,16 @@ class createGame extends Container{
     
     private stakeContainer:createContainer
     private transit:Transitions
-    private text:any
-    private stakeValue:any
+    private text!:Text
+    private stakeValue!:Text
     private val:number=20
-    private playState:any={value:true}
-    private autoState:any={value:true}
-    private turboState:object={value:true}
-    
-
+    private playState:{value:boolean}={value:true}
+    private autoState:{value:boolean}={value:true}
+    private turboState:{value:boolean}={value:true}
     private reels:CreateReels
-    private app:any
+    private app:Application
 
-    constructor(app:any){
+    constructor(app:Application){
         super()
 
         this.transit=new Transitions()
@@ -41,12 +39,12 @@ class createGame extends Container{
         
         this.stakeContainer=new createContainer()
 
-        this.reelContainer=new createContainer('reelFrame')
-        this.playBtn=new createContainer('spin')
-        this.autoPlay=new createContainer('autoSpin')
-        this.turbo=new createContainer('turbo')
-        this.incStake=new createContainer('plus')
-        this.decStake=new createContainer('minus')
+        this.reelContainer=new createContainer('reelframe.png')
+        this.playBtn=new createContainer('spineBtn_main_normal.png')
+        this.autoPlay=new createContainer('menu_autospin_normal.png')
+        this.turbo=new createContainer('menu_quickSpin_normal.png')
+        this.incStake=new createContainer('plusIcon_normal.png')
+        this.decStake=new createContainer('minusIcon_normal.png')
         this.app=app
         this.balance=new createContainer()
         this.stake=new createContainer()
@@ -63,47 +61,37 @@ class createGame extends Container{
 
 
 
-        this.transit.hoverTransition(this.playBtn,'spinH','spin')
-        this.transit.hoverTransition(this.autoPlay,'autoSpinH','autoSpin','autoSpinD','autoSpinD',this.autoState)
-        this.transit.hoverTransition(this.turbo,'turboH','turbo')
-
-
+        this.transit.hoverTransition(this.playBtn,'spineBtn_main_hover.png','spineBtn_main_normal.png')
+        this.transit.hoverTransition(this.autoPlay,'menu_autospin_hover.png','menu_autospin_normal.png','menu_autospin_down.png','menu_autospin_down.png',this.autoState)
+        this.transit.hoverTransition(this.turbo,'menu_quickSpin_hover.png','menu_quickSpin_normal.png','menu_quickSpin_down.png','menu_quickSpin_down.png',this.turboState)
        
 
-        this.transit.clickTransition(this.playBtn,'spinD','spin',this.playState,()=>{
+        this.transit.clickTransition(this.playBtn,'spineBtn_main_disabled.png','spineBtn_main_normal.png',this.playState,()=>{
              this.Accounts.decreaseBalnce(this.val)
                 this.text.text=`$${this.Accounts.getBalance()}\nBalance`
-                
-                this.reels.playAnimation=true
-                this.reels.spinning=true
-                this.reels.buildBR();
 
                 this.playBtn.children[0].eventMode='none'
-            setTimeout(()=>{
-                 this.reels.buildReel(false)
-            this.reels.spinning=false
-            //this.reels.playAnimation=false
-            this.reels.bringDown=true   
-            },1500)
-                
+            
+                this.reels.Tween.startSpin()
             setTimeout(()=>{
                 this.playState.value=true
-                this.reels.spinning=false
-                this.playBtn.changeTexture('spin')
+
+                this.playBtn.changeTexture('spineBtn_main_normal.png')
                 this.playBtn.children[0].eventMode='static'
                 
-            },2000)
+            },4000)
         })
 
-        this.transit.clickTransition(this.autoPlay,'autoSpinD','autoSpin',this.autoState,)
-        this.transit.clickTransition(this.turbo,'turboD','turbo',this.turboState)
+        this.transit.clickTransition(this.autoPlay,'menu_autospin_down.png','menu_autospin_normal.png',this.autoState,()=>{
+            setInterval(()=>{this.reels.Tween.startSpin()
+
+            },2000)
+        })
+        this.transit.clickTransition(this.turbo,'menu_quickSpin_down.png','menu_quickSpin_normal.png',this.turboState)
         
 
         this.addChild(this.playContainer)
     }
-
-
-
     private buildAccountPanel(){
 
         this.text=new Text({
@@ -121,7 +109,6 @@ class createGame extends Container{
         this.addChild(this.balance)
 
     }
-
     private buildStakePanel(){
         this.stakeValue=new Text({
             text:`$${this.val}\n stake`,
@@ -144,30 +131,29 @@ class createGame extends Container{
         this.decStake.scale.set(0.5)
 
         this.stakeContainer.position.set(500,350)
-        this.stakeContainer.addChild(this.stake,this.incStake,this,this.decStake)
+        this.stakeContainer.addChild(this.stake,this.incStake,this.decStake)
         this.addChild(this.stakeContainer)
 
 
-        this.transit.clickTransition(this.incStake,'plus','plus',{value:true},()=>{
+        this.transit.clickTransition(this.incStake,'plusIcon_normal.png','plusIcon_normal.png',{value:true},()=>{
             if(this.val+20>=100||this.val>=100){
-                this.incStake.changeTexture('plusD')
+                this.incStake.changeTexture('plusIcon_disabled.png')
                 //this.incState.value=false
              }
             if(this.val>=100)return
            
             this.val+=20
             this.stakeValue.text=`$${this.val}\n stake`
-            this.stakeValue.size=this.stakeValue.size*0.6
             //this.deccState.value=true
             
-            if(this.val>=20)this.decStake.changeTexture('minus')
+            if(this.val>=20)this.decStake.changeTexture('minusIcon_normal.png')
         })
 
 
-        this.transit.clickTransition(this.decStake,'minus','minus',{value:true},()=>{
+        this.transit.clickTransition(this.decStake,'minusIcon_normal.png','minusIcon_normal.png',{value:true},()=>{
             
              if(this.val-20<=0||this.val<=0){
-                this.decStake.changeTexture('minusD')
+                this.decStake.changeTexture('minusIcon_disabled.png')
                 
             }
             if(this.val<=0)return
@@ -175,7 +161,7 @@ class createGame extends Container{
             this.val-=20
             this.stakeValue.text=`$${this.val}\n stake`
             
-            if(this.val<=80)this.incStake.changeTexture('plus')
+            if(this.val<=80)this.incStake.changeTexture('plusIcon_normal.png')
 
         })
 
@@ -183,33 +169,20 @@ class createGame extends Container{
 
     }
 
-     public buildGame(bg:CreateBg){
+     public buildGame(){
         this.addChild(this.reelContainer)
         this.reelContainer.scale.set(0.5)
 
         this.reels.buildReels(this.reelContainer)
+        
 
         this.reelContainer.addChild(this.reels)
-
         this.buildPlayPanelButton()
         this.buildAccountPanel()
         this.buildStakePanel()
 
 
-
-        this.app.ticker.add(()=>{
-            
-            if(this.reels.playAnimation){
-                
-                this.reels.startAnimation()
-            }
-            if(this.reels.bringDown){
-                this.reels.buildanimateDown()
-                this.reels.checkWin()
-            }
-        })
-
-
+        
     }
 
 }

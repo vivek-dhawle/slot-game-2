@@ -3,7 +3,16 @@ import createIntro from '../scene/CreateIntro.ts'
 import createBg from'../scene/CreateBg.ts'
 import createGame from '../scene/CreateGame.ts'
 
-const Buildapp:any=new BuildApp()
+import AssetsLoader from '../utils/AssetLoader.ts'
+
+
+await AssetsLoader.loadBg()
+await AssetsLoader.loadIntro()
+await AssetsLoader.loadGame()
+
+const Buildapp:BuildApp=new BuildApp()
+
+
 
 const app=await Buildapp.createApp()
 
@@ -15,9 +24,11 @@ const game:createGame=new createGame(app)
 bg.buildBg()
 
 
-intro.buildIntro(bg,()=>{bg.addChild(game)})
+intro.buildIntro(bg)
+intro.playBtn.on('startPlay',()=>{
+    game.buildGame()
+    bg.addChild(game)
+})
 
-game.buildGame(bg)
-//bg.addChild(game)
 
 app.stage.addChild(bg)

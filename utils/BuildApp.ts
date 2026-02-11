@@ -18,7 +18,7 @@ class BuildApp {
             background:0x1e1e1e
         })
         document.body.appendChild(BuildApp.app.canvas);
-        await this.loader.LoadAssets()
+        
         return BuildApp.app
     }
 

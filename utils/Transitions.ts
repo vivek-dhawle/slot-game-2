@@ -2,7 +2,7 @@
 import createContainer from './CreateConatiner.ts'
 
 class Transitions{
-    hoverTransition(element:createContainer,truetransitSprite:string,truebaseSprite:string,falsetransitSprite?:string|null,falsebaseSprite?:string|null,mode?:any,cb?:Function|null){
+    hoverTransition(element:createContainer,truetransitSprite:string,truebaseSprite:string,falsetransitSprite?:string|null,falsebaseSprite?:string|null,mode?:{value:boolean},cb?:Function|null){
         element.children[0].eventMode='static'
         element.children[0].cursor='pointer'
         let texture:string
@@ -27,19 +27,19 @@ class Transitions{
             if(cb)cb()
         });
     }
-    clickTransition(element:createContainer,falseMode:string,trueMode:string,mode?:any,cb?:Function|null){
+    clickTransition(element:createContainer,falseMode:string,trueMode:string,mode?:{value:boolean},cb?:Function|null){
         element.children[0].eventMode='static'
         element.children[0].cursor='pointer'
         let texture:string
-        element.children[0].on('mousedown',(e)=>{
-            if(mode.value){
+        element.children[0].on('mousedown',()=>{
+            if(mode?.value){
                 texture=falseMode
             }
             else{
                 texture=trueMode
             }
             element.changeTexture(texture)
-            mode.value=!mode.value
+            if(mode)mode.value=!mode.value
             if(cb)cb()
             
         })

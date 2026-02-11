@@ -1,18 +1,19 @@
 import createContainer from "../utils/CreateConatiner";
-import { Container,BlurFilter } from "pixi.js";
-
+import { Container,BlurFilter,Application } from "pixi.js";
 class CreateBg extends Container {
     private bg:createContainer
     private bg1:createContainer
-    private app:any
+    private app:Application
     private blurfltr:any
     
-
-    constructor(app:any){
+    
+    constructor(app:Application){
         super()
         this.app=app
-        this.bg=new createContainer('bg')
-        this.bg1=new createContainer('bg')
+
+        
+        this.bg=new createContainer('bg.png')
+        this.bg1=new createContainer('bg.png')
         this.pivot.set(this.width/2,this.height/2)
         this.position.set(
             this.app.screen.width / 2,
