@@ -4,7 +4,7 @@ import Transitions from '../utils/Transitions.ts'
 import { Container,Text,Application} from "pixi.js";
 import Account from '../utils/accounts.ts'
 import CreateReels from './CreateReels.ts'
-
+import fetchBal from '../utils/api.ts'
 class createGame extends Container{
     private reelContainer
     private playBtn:createContainer
@@ -60,9 +60,19 @@ class createGame extends Container{
         this.playContainer.position.set(0,300)
 
 
-        this.reels.Tween.on('startSpin',()=>{
-            this.Accounts.decreaseBalnce(this.val)
-                this.text.text=`$${this.Accounts.getBalance()}\nBalance`
+        this.reels.Tween.on('startSpin',async ()=>{
+            let data
+           try {
+             data=await fetchBal(this.Accounts.getBalance(),this.val)
+ 
+ 
+                 
+           } catch (error) {
+            data= this.Accounts.getBalance()-this.val
+
+           }
+             this.Accounts.decreaseBalnce(this.val)
+                this.text.text=`$${data.balance?data.balance:data}\nBalance`
         })
         this.transit.hoverTransition(this.playBtn,'spineBtn_main_hover.png','spineBtn_main_normal.png')
         this.transit.hoverTransition(this.autoPlay,'menu_autospin_hover.png','menu_autospin_normal.png','menu_autospin_down.png','menu_autospin_down.png',this.autoState)
@@ -71,7 +81,7 @@ class createGame extends Container{
 
         this.transit.clickTransition(this.playBtn,'spineBtn_main_disabled.png','spineBtn_main_normal.png',this.playState,()=>{
              
-
+                
                 this.playBtn.children[0].eventMode='none'
             
                 this.reels.Tween.startSpin()
@@ -102,7 +112,16 @@ class createGame extends Container{
                 
             }
         })
-        this.transit.clickTransition(this.turbo,'menu_quickSpin_down.png','menu_quickSpin_normal.png',this.turboState)
+        this.transit.clickTransition(this.turbo,'menu_quickSpin_down.png','menu_quickSpin_normal.png',this.turboState,()=>{
+            if (!this.turboState.value) {
+             
+               this.reels.Tween.turbo=false
+            } else {
+                
+                this.reels.Tween.turbo=true
+                
+            }
+        })
         
 
         this.addChild(this.playContainer)

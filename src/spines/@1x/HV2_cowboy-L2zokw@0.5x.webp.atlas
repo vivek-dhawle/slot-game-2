@@ -1,0 +1,62 @@
+
+HV2_cowboy-_vODbQ@0.5x.webp
+size: 252,77
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flare
+  rotate: false
+  xy: 1, 1
+  size: 80, 75
+  orig: 80, 76
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 82, 7
+  size: 78, 69
+  orig: 81, 72
+  offset: 1, 1
+  index: -1
+horse
+  rotate: false
+  xy: 216, 32
+  size: 35, 44
+  orig: 35, 48
+  offset: 0, 0
+  index: -1
+inside
+  rotate: true
+  xy: 162, 16
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+leg_F_L
+  rotate: false
+  xy: 179, 2
+  size: 11, 12
+  orig: 11, 12
+  offset: 0, 0
+  index: -1
+leg_F_R
+  rotate: false
+  xy: 192, 2
+  size: 9, 12
+  orig: 9, 12
+  offset: 0, 0
+  index: -1
+leg_R_R
+  rotate: true
+  xy: 162, 4
+  size: 11, 16
+  orig: 11, 16
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 202, 3
+  size: 12, 8
+  orig: 12, 11
+  offset: 0, 0
+  index: -1

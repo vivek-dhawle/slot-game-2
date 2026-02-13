@@ -3173,6 +3173,1254 @@
       ]
     },
     {
+      "name": "spines",
+      "assets": [
+        {
+          "alias": [
+            "spines/@1x/anticipation.atlas",
+            "anticipation.atlas"
+          ],
+          "src": [
+            "spines/@1x/anticipation-x4-lLw@0.5x.png.atlas",
+            "spines/@1x/anticipation-fEbWdg.png.atlas",
+            "spines/@1x/anticipation-5ktFQg.webp.atlas",
+            "spines/@1x/anticipation-3ubv5A@0.5x.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/anticipation.json",
+            "anticipation.json"
+          ],
+          "src": [
+            "spines/@1x/anticipation-kNb_DQ.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/background0.json",
+            "background0.json"
+          ],
+          "src": [
+            "spines/@1x/background0-zxBaDQ.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/background0.png",
+            "background0.png"
+          ],
+          "src": [
+            "spines/@1x/background0-P7VNdQ@0.5x.webp",
+            "spines/@1x/background0-iPefuQ.png",
+            "spines/@1x/background0-hg7iYQ.webp",
+            "spines/@1x/background0-eUbx4g@0.5x.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmap-export.png",
+            "bitmap-export.png"
+          ],
+          "src": [
+            "spines/@1x/bitmap-export-V4vXkw.webp",
+            "spines/@1x/bitmap-export-5Wy3Xg@0.5x.png",
+            "spines/@1x/bitmap-export-5ik40A@0.5x.webp",
+            "spines/@1x/bitmap-export-3HXFGg.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmap-export.xml",
+            "bitmap-export.xml"
+          ],
+          "src": [
+            "spines/@1x/bitmap-export-xFhr5w.xml"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfontLadder-export.png",
+            "bitmapfontLadder-export.png"
+          ],
+          "src": [
+            "spines/@1x/bitmapfontLadder-export-U1SmWQ.png",
+            "spines/@1x/bitmapfontLadder-export-nSXtiw.webp",
+            "spines/@1x/bitmapfontLadder-export-Mi9aVw@0.5x.webp",
+            "spines/@1x/bitmapfontLadder-export-_7MmPg@0.5x.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfontLadder-export.xml",
+            "bitmapfontLadder-export.xml"
+          ],
+          "src": [
+            "spines/@1x/bitmapfontLadder-export-hV8UwQ.xml"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfontLadder.png",
+            "bitmapfontLadder.png"
+          ],
+          "src": [
+            "spines/@1x/bitmapfontLadder-sn27yA.png",
+            "spines/@1x/bitmapfontLadder-qeVkkA@0.5x.webp",
+            "spines/@1x/bitmapfontLadder-lymlyg@0.5x.png",
+            "spines/@1x/bitmapfontLadder-fYTg6Q.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfontMul-export.png",
+            "bitmapfontMul-export.png"
+          ],
+          "src": [
+            "spines/@1x/bitmapfontMul-export-y3O6Qw.png",
+            "spines/@1x/bitmapfontMul-export-L2cqyA@0.5x.webp",
+            "spines/@1x/bitmapfontMul-export-HpMrEA.webp",
+            "spines/@1x/bitmapfontMul-export-5KA8Qw@0.5x.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfontMul-export.xml",
+            "bitmapfontMul-export.xml"
+          ],
+          "src": [
+            "spines/@1x/bitmapfontMul-export-PxBFmQ.xml"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfontMul.png",
+            "bitmapfontMul.png"
+          ],
+          "src": [
+            "spines/@1x/bitmapfontMul-Xp4SdA.webp",
+            "spines/@1x/bitmapfontMul-FoawQQ@0.5x.webp",
+            "spines/@1x/bitmapfontMul-eu_CFg@0.5x.png",
+            "spines/@1x/bitmapfontMul-_2xAdQ.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfont_G-export.png",
+            "bitmapfont_G-export.png"
+          ],
+          "src": [
+            "spines/@1x/bitmapfont_G-export-qt1RIQ@0.5x.webp",
+            "spines/@1x/bitmapfont_G-export-pMkOQg.webp",
+            "spines/@1x/bitmapfont_G-export-4cc2sw@0.5x.png",
+            "spines/@1x/bitmapfont_G-export-1Vy8cw.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfont_G-export.xml",
+            "bitmapfont_G-export.xml"
+          ],
+          "src": [
+            "spines/@1x/bitmapfont_G-export--ojMKw.xml"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/bitmapfont_G.png",
+            "bitmapfont_G.png"
+          ],
+          "src": [
+            "spines/@1x/bitmapfont_G-zEn_ug.png",
+            "spines/@1x/bitmapfont_G-typeTA.webp",
+            "spines/@1x/bitmapfont_G-p18kJA@0.5x.png",
+            "spines/@1x/bitmapfont_G-M9Goyw@0.5x.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/BONUS.atlas",
+            "BONUS.atlas"
+          ],
+          "src": [
+            "spines/@1x/BONUS-zRRSgw.png.atlas",
+            "spines/@1x/BONUS-NmYB8A@0.5x.webp.atlas",
+            "spines/@1x/BONUS-KdzrqQ@0.5x.png.atlas",
+            "spines/@1x/BONUS-c8Mq2w.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/BONUS.json",
+            "BONUS.json"
+          ],
+          "src": [
+            "spines/@1x/BONUS-bngf.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/buyfeature.json",
+            "buyfeature.json"
+          ],
+          "src": [
+            "spines/@1x/buyfeature-nWqb.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/buyfeature.png",
+            "buyfeature.png"
+          ],
+          "src": [
+            "spines/@1x/buyfeature-Uaz-Sg.png",
+            "spines/@1x/buyfeature-TAZjUg.webp",
+            "spines/@1x/buyfeature-bMMMxg@0.5x.webp",
+            "spines/@1x/buyfeature-4kHLpw@0.5x.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/coin.atlas",
+            "coin.atlas"
+          ],
+          "src": [
+            "spines/@1x/coin-W8AQvQ.webp.atlas",
+            "spines/@1x/coin-kKuNsQ@0.5x.webp.atlas",
+            "spines/@1x/coin-9KkvSg@0.5x.png.atlas",
+            "spines/@1x/coin-0WStRw.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/coin.json",
+            "coin.json"
+          ],
+          "src": [
+            "spines/@1x/coin-mJBy7w.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/commendations.atlas",
+            "commendations.atlas"
+          ],
+          "src": [
+            "spines/@1x/commendations-qPZKYA@0.5x.png.atlas",
+            "spines/@1x/commendations-grquyQ@0.5x.webp.atlas",
+            "spines/@1x/commendations-grpt5A.webp.atlas",
+            "spines/@1x/commendations-7BvO-w.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/commendations.json",
+            "commendations.json"
+          ],
+          "src": [
+            "spines/@1x/commendations-JJWguA.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/features0.json",
+            "features0.json"
+          ],
+          "src": [
+            "spines/@1x/features0-ng8WQw.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/features0.png",
+            "features0.png"
+          ],
+          "src": [
+            "spines/@1x/features0-ZbK3aA@0.5x.png",
+            "spines/@1x/features0-yWFtqA.png",
+            "spines/@1x/features0-oVHOPQ.webp",
+            "spines/@1x/features0-hZUzeA@0.5x.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/freeSpinAnimation0.json",
+            "freeSpinAnimation0.json"
+          ],
+          "src": [
+            "spines/@1x/freeSpinAnimation0-Fl061Q.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/freeSpinAnimation0.png",
+            "freeSpinAnimation0.png"
+          ],
+          "src": [
+            "spines/@1x/freeSpinAnimation0-Vku50w@0.5x.webp",
+            "spines/@1x/freeSpinAnimation0-pnv6tQ@0.5x.png",
+            "spines/@1x/freeSpinAnimation0-EheRFQ.webp",
+            "spines/@1x/freeSpinAnimation0-e2wEvQ.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/gameLogo0.json",
+            "gameLogo0.json"
+          ],
+          "src": [
+            "spines/@1x/gameLogo0-gEHksg.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/gameLogo0.png",
+            "gameLogo0.png"
+          ],
+          "src": [
+            "spines/@1x/gameLogo0-rVHPTw@0.5x.webp",
+            "spines/@1x/gameLogo0-k6HIHA@0.5x.png",
+            "spines/@1x/gameLogo0-E7ow3w.png",
+            "spines/@1x/gameLogo0-2eYMaQ.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/glow.atlas",
+            "glow.atlas"
+          ],
+          "src": [
+            "spines/@1x/glow-ovb0LQ.png.atlas",
+            "spines/@1x/glow-gAV23w.webp.atlas",
+            "spines/@1x/glow-czF0OQ@0.5x.png.atlas",
+            "spines/@1x/glow-3VMRww@0.5x.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/glow.json",
+            "glow.json"
+          ],
+          "src": [
+            "spines/@1x/glow-PTcCtw.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/HV1_longhorn.atlas",
+            "HV1_longhorn.atlas"
+          ],
+          "src": [
+            "spines/@1x/HV1_longhorn-LTygOA@0.5x.png.atlas",
+            "spines/@1x/HV1_longhorn-jzrgcw.webp.atlas",
+            "spines/@1x/HV1_longhorn-0FgHPQ.png.atlas",
+            "spines/@1x/HV1_longhorn--uP6gQ@0.5x.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/HV1_longhorn.json",
+            "HV1_longhorn.json"
+          ],
+          "src": [
+            "spines/@1x/HV1_longhorn-8--c2A.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/HV2_cowboy.atlas",
+            "HV2_cowboy.atlas"
+          ],
+          "src": [
+            "spines/@1x/HV2_cowboy-Sy59sA.webp.atlas",
+            "spines/@1x/HV2_cowboy-M6uI@0.5x.png.atlas",
+            "spines/@1x/HV2_cowboy-L2zokw@0.5x.webp.atlas",
+            "spines/@1x/HV2_cowboy-1-jZcg.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/HV2_cowboy.json",
+            "HV2_cowboy.json"
+          ],
+          "src": [
+            "spines/@1x/HV2_cowboy-M9za2w.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/introScreen.json",
+            "introScreen.json"
+          ],
+          "src": [
+            "spines/@1x/introScreen-I8nxFQ.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/introScreen.png",
+            "introScreen.png"
+          ],
+          "src": [
+            "spines/@1x/introScreen-npynEg@0.5x.webp",
+            "spines/@1x/introScreen-nebEDg@0.5x.png",
+            "spines/@1x/introScreen-JckHkA.png",
+            "spines/@1x/introScreen-3SRddQ.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/jackpot.atlas",
+            "jackpot.atlas"
+          ],
+          "src": [
+            "spines/@1x/jackpot-wfOfLQ.webp.atlas",
+            "spines/@1x/jackpot-pIzwcA.png.atlas",
+            "spines/@1x/jackpot-mx8oKA@0.5x.webp.atlas",
+            "spines/@1x/jackpot-2z-7yQ@0.5x.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/jackpot.json",
+            "jackpot.json"
+          ],
+          "src": [
+            "spines/@1x/jackpot-FTrWSg.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/jackpot_popup.atlas",
+            "jackpot_popup.atlas"
+          ],
+          "src": [
+            "spines/@1x/jackpot_popup-TrY3kA.webp.atlas",
+            "spines/@1x/jackpot_popup-PSPNFg@0.5x.webp.atlas",
+            "spines/@1x/jackpot_popup-cnAWcw.png.atlas",
+            "spines/@1x/jackpot_popup-4eWrLA@0.5x.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/jackpot_popup.json",
+            "jackpot_popup.json"
+          ],
+          "src": [
+            "spines/@1x/jackpot_popup-SjlVqw.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/jackpot_upgrade.atlas",
+            "jackpot_upgrade.atlas"
+          ],
+          "src": [
+            "spines/@1x/jackpot_upgrade-V8DP4g.png.atlas",
+            "spines/@1x/jackpot_upgrade-dYvD6g@0.5x.webp.atlas",
+            "spines/@1x/jackpot_upgrade-a92pIw.webp.atlas",
+            "spines/@1x/jackpot_upgrade-7i704w@0.5x.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/jackpot_upgrade.json",
+            "jackpot_upgrade.json"
+          ],
+          "src": [
+            "spines/@1x/jackpot_upgrade-hBXDWQ.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/logo.atlas",
+            "logo.atlas"
+          ],
+          "src": [
+            "spines/@1x/logo-Y0q-uw.png.atlas",
+            "spines/@1x/logo-wh1wLA.webp.atlas",
+            "spines/@1x/logo-LlqL-A@0.5x.png.atlas",
+            "spines/@1x/logo-Ju7rpg@0.5x.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/logo.json",
+            "logo.json"
+          ],
+          "src": [
+            "spines/@1x/logo-_kAYvg.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_a.atlas",
+            "LV_a.atlas"
+          ],
+          "src": [
+            "spines/@1x/LV_a-Poof.webp.atlas",
+            "spines/@1x/LV_a-jJw33A@0.5x.png.atlas",
+            "spines/@1x/LV_a-I3SK1Q.png.atlas",
+            "spines/@1x/LV_a--XYFcg@0.5x.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_a.json",
+            "LV_a.json"
+          ],
+          "src": [
+            "spines/@1x/LV_a-TJCH-Q.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_j.atlas",
+            "LV_j.atlas"
+          ],
+          "src": [
+            "spines/@1x/LV_j-tZDJig@0.5x.png.atlas",
+            "spines/@1x/LV_j-gwCPqA.webp.atlas",
+            "spines/@1x/LV_j-b6o3@0.5x.webp.atlas",
+            "spines/@1x/LV_j-9SOWKw.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_j.json",
+            "LV_j.json"
+          ],
+          "src": [
+            "spines/@1x/LV_j-xQIq-g.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_k.atlas",
+            "LV_k.atlas"
+          ],
+          "src": [
+            "spines/@1x/LV_k-tMY2CA@0.5x.webp.atlas",
+            "spines/@1x/LV_k-oh31lw.png.atlas",
+            "spines/@1x/LV_k-KBr8Ng.webp.atlas",
+            "spines/@1x/LV_k-7CDSOQ@0.5x.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_k.json",
+            "LV_k.json"
+          ],
+          "src": [
+            "spines/@1x/LV_k-3YCg7g.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_q.atlas",
+            "LV_q.atlas"
+          ],
+          "src": [
+            "spines/@1x/LV_q-VH78sw@0.5x.png.atlas",
+            "spines/@1x/LV_q-qt9a0A.png.atlas",
+            "spines/@1x/LV_q-fIQW2g@0.5x.webp.atlas",
+            "spines/@1x/LV_q-a12OWQ.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/LV_q.json",
+            "LV_q.json"
+          ],
+          "src": [
+            "spines/@1x/LV_q-ZoZduw.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/menu0.json",
+            "menu0.json"
+          ],
+          "src": [
+            "spines/@1x/menu0-nOtdlQ.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/menu0.png",
+            "menu0.png"
+          ],
+          "src": [
+            "spines/@1x/menu0-PCVDew@0.5x.png",
+            "spines/@1x/menu0-oz4wAA@0.5x.webp",
+            "spines/@1x/menu0-GhVJLg.webp",
+            "spines/@1x/menu0--m7eFw.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/menuM0.json",
+            "menuM0.json"
+          ],
+          "src": [
+            "spines/@1x/menuM0-IJCAGg.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/menuM0.png",
+            "menuM0.png"
+          ],
+          "src": [
+            "spines/@1x/menuM0-Y7ctRA@0.5x.webp",
+            "spines/@1x/menuM0-PagK_A@0.5x.png",
+            "spines/@1x/menuM0-dGjLSw.png",
+            "spines/@1x/menuM0-38V1-Q.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/MV1_texas.atlas",
+            "MV1_texas.atlas"
+          ],
+          "src": [
+            "spines/@1x/MV1_texas-S10s8g.png.atlas",
+            "spines/@1x/MV1_texas-MoJYvg@0.5x.png.atlas",
+            "spines/@1x/MV1_texas-eNVfnQ@0.5x.webp.atlas",
+            "spines/@1x/MV1_texas-9vVJFw.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/MV1_texas.json",
+            "MV1_texas.json"
+          ],
+          "src": [
+            "spines/@1x/MV1_texas-msFA7A.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/MV2_cactus.atlas",
+            "MV2_cactus.atlas"
+          ],
+          "src": [
+            "spines/@1x/MV2_cactus-W_x3.webp.atlas",
+            "spines/@1x/MV2_cactus-TkYhyg@0.5x.webp.atlas",
+            "spines/@1x/MV2_cactus-kTTm4Q@0.5x.png.atlas",
+            "spines/@1x/MV2_cactus-2CrL1A.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/MV2_cactus.json",
+            "MV2_cactus.json"
+          ],
+          "src": [
+            "spines/@1x/MV2_cactus-y9y4Gg.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/newPanel0.json",
+            "newPanel0.json"
+          ],
+          "src": [
+            "spines/@1x/newPanel0-RyLG-Q.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/newPanel0.png",
+            "newPanel0.png"
+          ],
+          "src": [
+            "spines/@1x/newPanel0-rlLJhA.webp",
+            "spines/@1x/newPanel0-oTbydg@0.5x.webp",
+            "spines/@1x/newPanel0-heGe.png",
+            "spines/@1x/newPanel0-3jQv@0.5x.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/oriental flower_symbols.png",
+            "oriental flower_symbols.png"
+          ],
+          "src": [
+            "spines/@1x/oriental flower_symbols-WE-KLQ.webp",
+            "spines/@1x/oriental flower_symbols-MIzQTg@0.5x.webp",
+            "spines/@1x/oriental flower_symbols-GKbr3w@0.5x.png",
+            "spines/@1x/oriental flower_symbols-5ypo.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/reelFrame0.json",
+            "reelFrame0.json"
+          ],
+          "src": [
+            "spines/@1x/reelFrame0-ungw0w.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/reelFrame0.png",
+            "reelFrame0.png"
+          ],
+          "src": [
+            "spines/@1x/reelFrame0-uL27yw@0.5x.png",
+            "spines/@1x/reelFrame0-sWXdtQ.png",
+            "spines/@1x/reelFrame0-fSLkaQ@0.5x.webp",
+            "spines/@1x/reelFrame0-0paw5A.webp"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/special_coin.atlas",
+            "special_coin.atlas"
+          ],
+          "src": [
+            "spines/@1x/special_coin-xo0RMQ@0.5x.webp.atlas",
+            "spines/@1x/special_coin-wPtgNQ@0.5x.png.atlas",
+            "spines/@1x/special_coin-KkUXFg.png.atlas",
+            "spines/@1x/special_coin-J9dNmQ.webp.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/special_coin.json",
+            "special_coin.json"
+          ],
+          "src": [
+            "spines/@1x/special_coin-0zDO5w.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/spin_button.atlas",
+            "spin_button.atlas"
+          ],
+          "src": [
+            "spines/@1x/spin_button-RGXbwQ@0.5x.webp.atlas",
+            "spines/@1x/spin_button-pWgZIg.webp.atlas",
+            "spines/@1x/spin_button-HEGrKA.png.atlas",
+            "spines/@1x/spin_button-9X_nNw@0.5x.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/spin_button.json",
+            "spin_button.json"
+          ],
+          "src": [
+            "spines/@1x/spin_button-8r8YDA.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/step.atlas",
+            "step.atlas"
+          ],
+          "src": [
+            "spines/@1x/step-uFr3@0.5x.png.atlas",
+            "spines/@1x/step-SKhXfA.webp.atlas",
+            "spines/@1x/step-p_turA@0.5x.webp.atlas",
+            "spines/@1x/step-ilOcSQ.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/step.json",
+            "step.json"
+          ],
+          "src": [
+            "spines/@1x/step-dkoWhA.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/symbols.json",
+            "symbols.json"
+          ],
+          "src": [
+            "spines/@1x/symbols-erAmLg.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/symbols.json.bak",
+            "symbols.json.bak"
+          ],
+          "src": [
+            "spines/@1x/symbols.json-jHxkJw.bak"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/symbols.png",
+            "symbols.png"
+          ],
+          "src": [
+            "spines/@1x/symbols-jAgX1g@0.5x.webp",
+            "spines/@1x/symbols-hBoVWw.webp",
+            "spines/@1x/symbols-E6RkCQ@0.5x.png",
+            "spines/@1x/symbols-3oikEg.png"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/transition.atlas",
+            "transition.atlas"
+          ],
+          "src": [
+            "spines/@1x/transition-yHVnWA@0.5x.webp.atlas",
+            "spines/@1x/transition-UmgWEA@0.5x.png.atlas",
+            "spines/@1x/transition-lUKq3Q.webp.atlas",
+            "spines/@1x/transition-85dAbw.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/transition.json",
+            "transition.json"
+          ],
+          "src": [
+            "spines/@1x/transition-6yS3BQ.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/transition.zip",
+            "transition.zip"
+          ],
+          "src": [
+            "spines/@1x/transition-KRtHWQ.zip"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/WILD.atlas",
+            "WILD.atlas"
+          ],
+          "src": [
+            "spines/@1x/WILD-sPxllg.webp.atlas",
+            "spines/@1x/WILD-NDWoKw@0.5x.webp.atlas",
+            "spines/@1x/WILD-lHoyqQ.png.atlas",
+            "spines/@1x/WILD-2rEXYg@0.5x.png.atlas"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        },
+        {
+          "alias": [
+            "spines/@1x/WILD.json",
+            "WILD.json"
+          ],
+          "src": [
+            "spines/@1x/WILD-8IERBw.json"
+          ],
+          "data": {
+            "tags": {
+              "m": true
+            }
+          }
+        }
+      ]
+    },
+    {
       "name": "symbols",
       "assets": [
         {

@@ -1,0 +1,27 @@
+
+spin_button-KnkIJQ@0.5x.png
+size: 224,169
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Shine
+  rotate: false
+  xy: 170, 84
+  size: 11, 29
+  orig: 32, 32
+  offset: 10, 1
+  index: -1
+glow2
+  rotate: false
+  xy: 2, 2
+  size: 166, 165
+  orig: 166, 165
+  offset: 0, 0
+  index: -1
+spin-btn_normal
+  rotate: false
+  xy: 170, 115
+  size: 52, 52
+  orig: 52, 52
+  offset: 0, 0
+  index: -1

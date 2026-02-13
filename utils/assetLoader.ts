@@ -18,6 +18,10 @@ class AssetsLoader{
 
     await Assets.loadBundle(['symbols','reelFrame','gamePanel']);
   }
+  static async loadSpines() {
+
+    await Assets.loadBundle(['spines']);
+  }
 
  
 }

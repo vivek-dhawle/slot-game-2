@@ -1,0 +1,62 @@
+
+HV2_cowboy-RzoL7Q.webp
+size: 505,155
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flare
+  rotate: false
+  xy: 2, 2
+  size: 161, 151
+  orig: 161, 152
+  offset: 0, 1
+  index: -1
+frame
+  rotate: false
+  xy: 165, 14
+  size: 157, 139
+  orig: 162, 145
+  offset: 2, 3
+  index: -1
+horse
+  rotate: false
+  xy: 433, 64
+  size: 70, 89
+  orig: 70, 96
+  offset: 0, 0
+  index: -1
+inside
+  rotate: true
+  xy: 324, 32
+  size: 121, 107
+  orig: 121, 107
+  offset: 0, 0
+  index: -1
+leg_F_L
+  rotate: false
+  xy: 359, 5
+  size: 23, 25
+  orig: 23, 25
+  offset: 0, 0
+  index: -1
+leg_F_R
+  rotate: false
+  xy: 384, 5
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+leg_R_R
+  rotate: true
+  xy: 324, 8
+  size: 22, 33
+  orig: 22, 33
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 405, 6
+  size: 24, 17
+  orig: 24, 22
+  offset: 0, 0
+  index: -1

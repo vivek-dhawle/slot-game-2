@@ -5,7 +5,7 @@ import { pixiPipes } from '@assetpack/core/pixi';
 function assetpackPlugin(): Plugin {
   const apConfig: AssetPackConfig = {
     entry: './raw-assets',
-    output: './public',
+    output: './src',
     pipes: [
       ...pixiPipes({
         manifest: {

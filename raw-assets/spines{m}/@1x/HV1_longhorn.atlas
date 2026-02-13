@@ -1,0 +1,55 @@
+
+HV1_longhorn.png
+size: 1162,173
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body2
+  rotate: false
+  xy: 212, 0
+  size: 210, 173
+  orig: 210, 173
+  offset: 0, 0
+  index: -1
+ear_L2
+  rotate: false
+  xy: 424, 0
+  size: 210, 173
+  orig: 210, 173
+  offset: 0, 0
+  index: -1
+ear_R2
+  rotate: false
+  xy: 636, 0
+  size: 210, 173
+  orig: 210, 173
+  offset: 0, 0
+  index: -1
+flare2
+  rotate: true
+  xy: 848, 7
+  size: 166, 154
+  orig: 201, 173
+  offset: 35, 1
+  index: -1
+frame
+  rotate: false
+  xy: 1004, 34
+  size: 158, 139
+  orig: 210, 173
+  offset: 27, 16
+  index: -1
+head2
+  rotate: false
+  xy: 0, 0
+  size: 210, 173
+  orig: 210, 173
+  offset: 0, 0
+  index: -1
+star_glow
+  rotate: true
+  xy: 1004, 6
+  size: 26, 25
+  orig: 28, 27
+  offset: 1, 1
+  index: -1

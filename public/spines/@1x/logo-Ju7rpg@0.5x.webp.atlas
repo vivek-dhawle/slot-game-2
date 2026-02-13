@@ -1,0 +1,174 @@
+
+logo-MwsVzQ@0.5x.webp
+size: 325,63
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 1, 1
+  size: 162, 61
+  orig: 185, 80
+  offset: 11, 10
+  index: -1
+holdwin
+  rotate: false
+  xy: 200, 17
+  size: 74, 21
+  orig: 76, 23
+  offset: 1, 1
+  index: -1
+holdwin_glow
+  rotate: false
+  xy: 235, 42
+  size: 72, 19
+  orig: 74, 21
+  offset: 1, 1
+  index: -1
+ref_U_00
+  rotate: false
+  xy: 276, 18
+  size: 2, 2
+  orig: 61, 20
+  offset: 0, 8
+  index: -1
+ref_U_01
+  rotate: false
+  xy: 164, 1
+  size: 10, 14
+  orig: 61, 20
+  offset: 0, 2
+  index: -1
+ref_U_02
+  rotate: false
+  xy: 192, 1
+  size: 12, 15
+  orig: 61, 20
+  offset: 0, 2
+  index: -1
+ref_U_03
+  rotate: true
+  xy: 295, 24
+  size: 17, 16
+  orig: 61, 20
+  offset: 0, 1
+  index: -1
+ref_U_04
+  rotate: true
+  xy: 218, 41
+  size: 20, 16
+  orig: 61, 20
+  offset: 0, 1
+  index: -1
+ref_U_05
+  rotate: true
+  xy: 183, 17
+  size: 22, 16
+  orig: 61, 20
+  offset: 2, 1
+  index: -1
+ref_U_06
+  rotate: false
+  xy: 250, 1
+  size: 20, 15
+  orig: 61, 20
+  offset: 6, 1
+  index: -1
+ref_U_07
+  rotate: true
+  xy: 164, 39
+  size: 22, 18
+  orig: 61, 20
+  offset: 9, 1
+  index: -1
+ref_U_08
+  rotate: true
+  xy: 276, 22
+  size: 19, 18
+  orig: 61, 20
+  offset: 15, 1
+  index: -1
+ref_U_09
+  rotate: true
+  xy: 164, 16
+  size: 22, 18
+  orig: 61, 20
+  offset: 16, 1
+  index: -1
+ref_U_10
+  rotate: true
+  xy: 183, 40
+  size: 22, 17
+  orig: 61, 20
+  offset: 20, 1
+  index: -1
+ref_U_11
+  rotate: true
+  xy: 201, 40
+  size: 21, 16
+  orig: 61, 20
+  offset: 24, 1
+  index: -1
+ref_U_12
+  rotate: false
+  xy: 228, 1
+  size: 21, 15
+  orig: 61, 20
+  offset: 27, 1
+  index: -1
+ref_U_13
+  rotate: false
+  xy: 205, 1
+  size: 21, 15
+  orig: 61, 20
+  offset: 31, 1
+  index: -1
+ref_U_14
+  rotate: false
+  xy: 271, 1
+  size: 19, 15
+  orig: 61, 20
+  offset: 34, 1
+  index: -1
+ref_U_15
+  rotate: true
+  xy: 309, 45
+  size: 16, 15
+  orig: 61, 20
+  offset: 39, 1
+  index: -1
+ref_U_16
+  rotate: true
+  xy: 292, 3
+  size: 17, 15
+  orig: 61, 20
+  offset: 41, 1
+  index: -1
+ref_U_17
+  rotate: false
+  xy: 176, 2
+  size: 15, 13
+  orig: 61, 20
+  offset: 45, 1
+  index: -1
+ref_U_18
+  rotate: true
+  xy: 308, 10
+  size: 13, 9
+  orig: 61, 20
+  offset: 48, 1
+  index: -1
+ref_U_19
+  rotate: false
+  xy: 312, 35
+  size: 9, 9
+  orig: 61, 20
+  offset: 52, 1
+  index: -1
+ref_U_20
+  rotate: false
+  xy: 308, 1
+  size: 5, 8
+  orig: 61, 20
+  offset: 55, 1
+  index: -1
