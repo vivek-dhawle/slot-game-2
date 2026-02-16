@@ -3,7 +3,7 @@ import {Assets} from 'pixi.js'
 class AssetsLoader{
   static async init(){
     await Assets.init({
-      manifest:'./src/manifest.json', 
+      manifest:'/manifest.json', 
     });
   }
   static async loadBg(){
@@ -17,6 +17,10 @@ class AssetsLoader{
   static async loadGame() {
 
     await Assets.loadBundle(['symbols','reelFrame','gamePanel']);
+  }
+  static async loadSpines() {
+
+    await Assets.loadBundle(['spines']);
   }
 
  

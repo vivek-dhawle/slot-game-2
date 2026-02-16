@@ -1,0 +1,34 @@
+
+MV2_cactus-wdb8TA@0.5x.png
+size: 158,65
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cactus
+  rotate: true
+  xy: 1, 1
+  size: 63, 67
+  orig: 63, 68
+  offset: 0, 0
+  index: -1
+cactus_L
+  rotate: false
+  xy: 137, 24
+  size: 10, 19
+  orig: 10, 19
+  offset: 0, 0
+  index: -1
+flower
+  rotate: false
+  xy: 137, 44
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 69, 1
+  size: 63, 67
+  orig: 64, 68
+  offset: 1, 0
+  index: -1

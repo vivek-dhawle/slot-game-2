@@ -1,0 +1,55 @@
+
+HV1_longhorn-xYIoCw@0.5x.webp
+size: 581,86
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body2
+  rotate: false
+  xy: 106, 0
+  size: 105, 86
+  orig: 105, 86
+  offset: 0, 0
+  index: -1
+ear_L2
+  rotate: false
+  xy: 212, 0
+  size: 105, 86
+  orig: 105, 86
+  offset: 0, 0
+  index: -1
+ear_R2
+  rotate: false
+  xy: 318, 0
+  size: 105, 86
+  orig: 105, 86
+  offset: 0, 0
+  index: -1
+flare2
+  rotate: true
+  xy: 424, 3
+  size: 83, 77
+  orig: 100, 86
+  offset: 17, 0
+  index: -1
+frame
+  rotate: false
+  xy: 502, 17
+  size: 79, 69
+  orig: 105, 86
+  offset: 13, 8
+  index: -1
+head2
+  rotate: false
+  xy: 0, 0
+  size: 105, 86
+  orig: 105, 86
+  offset: 0, 0
+  index: -1
+star_glow
+  rotate: true
+  xy: 502, 3
+  size: 13, 12
+  orig: 14, 13
+  offset: 0, 0
+  index: -1

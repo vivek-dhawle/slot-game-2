@@ -1,0 +1,20 @@
+
+transition.png
+size: 566,206
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dust_r
+  rotate: false
+  xy: 329, 2
+  size: 235, 202
+  orig: 255, 208
+  offset: 18, 2
+  index: -1
+dust_st
+  rotate: false
+  xy: 2, 42
+  size: 325, 162
+  orig: 329, 171
+  offset: 0, 9
+  index: -1

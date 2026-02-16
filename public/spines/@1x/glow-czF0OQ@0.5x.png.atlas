@@ -1,0 +1,223 @@
+
+glow-i_vWdw@0.5x.png
+size: 191,191
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin_shine_00
+  rotate: false
+  xy: 24, 120
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_01
+  rotate: false
+  xy: 1, 118
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_02
+  rotate: false
+  xy: 48, 120
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_03
+  rotate: false
+  xy: 50, 168
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_04
+  rotate: false
+  xy: 50, 144
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_05
+  rotate: false
+  xy: 71, 121
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_06
+  rotate: false
+  xy: 74, 168
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_07
+  rotate: false
+  xy: 74, 144
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_08
+  rotate: false
+  xy: 71, 97
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_09
+  rotate: false
+  xy: 1, 95
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_10
+  rotate: false
+  xy: 24, 96
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_11
+  rotate: false
+  xy: 48, 96
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_12
+  rotate: false
+  xy: 71, 74
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_13
+  rotate: false
+  xy: 1, 71
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_14
+  rotate: true
+  xy: 27, 167
+  size: 23, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_15
+  rotate: true
+  xy: 27, 143
+  size: 23, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_16
+  rotate: true
+  xy: 1, 142
+  size: 23, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_17
+  rotate: false
+  xy: 24, 73
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_18
+  rotate: false
+  xy: 48, 73
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_19
+  rotate: false
+  xy: 71, 50
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_20
+  rotate: false
+  xy: 1, 48
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_21
+  rotate: false
+  xy: 24, 49
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_22
+  rotate: false
+  xy: 48, 49
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_23
+  rotate: false
+  xy: 71, 27
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_24
+  rotate: false
+  xy: 1, 24
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_25
+  rotate: false
+  xy: 24, 26
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_26
+  rotate: false
+  xy: 48, 26
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_27
+  rotate: false
+  xy: 71, 3
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_28
+  rotate: false
+  xy: 1, 1
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+coin_shine_29
+  rotate: false
+  xy: 24, 2
+  size: 22, 22
+  orig: 25, 25
+  offset: 1, 1
+  index: -1
+glow
+  rotate: false
+  xy: 1, 166
+  size: 25, 24
+  orig: 27, 27
+  offset: 1, 1
+  index: -1

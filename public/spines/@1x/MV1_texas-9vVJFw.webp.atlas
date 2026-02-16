@@ -1,0 +1,160 @@
+
+MV1_texas-GlDBhQ.webp
+size: 182,553
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+reflection_15
+  rotate: true
+  xy: 59, 47
+  size: 36, 50
+  orig: 70, 70
+  offset: 1, 20
+  index: -1
+reflection_16
+  rotate: true
+  xy: 58, 7
+  size: 38, 52
+  orig: 70, 70
+  offset: 1, 18
+  index: -1
+reflection_17
+  rotate: false
+  xy: 111, 59
+  size: 40, 52
+  orig: 70, 70
+  offset: 1, 18
+  index: -1
+reflection_18
+  rotate: false
+  xy: 136, 355
+  size: 44, 52
+  orig: 70, 70
+  offset: 1, 18
+  index: -1
+reflection_19
+  rotate: false
+  xy: 59, 85
+  size: 47, 54
+  orig: 70, 70
+  offset: 1, 16
+  index: -1
+reflection_20
+  rotate: true
+  xy: 122, 153
+  size: 52, 58
+  orig: 70, 70
+  offset: 1, 12
+  index: -1
+reflection_21
+  rotate: false
+  xy: 2, 8
+  size: 54, 63
+  orig: 70, 70
+  offset: 3, 7
+  index: -1
+reflection_22
+  rotate: false
+  xy: 2, 73
+  size: 55, 64
+  orig: 70, 70
+  offset: 6, 6
+  index: -1
+reflection_23
+  rotate: false
+  xy: 2, 207
+  size: 56, 65
+  orig: 70, 70
+  offset: 8, 5
+  index: -1
+reflection_24
+  rotate: false
+  xy: 2, 139
+  size: 54, 66
+  orig: 70, 70
+  offset: 10, 4
+  index: -1
+reflection_25
+  rotate: true
+  xy: 60, 218
+  size: 54, 66
+  orig: 70, 70
+  offset: 12, 4
+  index: -1
+reflection_26
+  rotate: false
+  xy: 128, 207
+  size: 52, 65
+  orig: 70, 70
+  offset: 15, 4
+  index: -1
+reflection_27
+  rotate: true
+  xy: 60, 168
+  size: 48, 60
+  orig: 70, 70
+  offset: 19, 4
+  index: -1
+reflection_28
+  rotate: false
+  xy: 136, 299
+  size: 42, 54
+  orig: 70, 70
+  offset: 25, 4
+  index: -1
+reflection_29
+  rotate: true
+  xy: 111, 113
+  size: 38, 55
+  orig: 70, 70
+  offset: 29, 3
+  index: -1
+reflection_30
+  rotate: false
+  xy: 112, 2
+  size: 36, 55
+  orig: 70, 70
+  offset: 31, 3
+  index: -1
+reflection_31
+  rotate: false
+  xy: 145, 496
+  size: 34, 55
+  orig: 70, 70
+  offset: 33, 3
+  index: -1
+reflection_32
+  rotate: false
+  xy: 145, 440
+  size: 32, 54
+  orig: 70, 70
+  offset: 35, 3
+  index: -1
+reflection_33
+  rotate: false
+  xy: 150, 5
+  size: 29, 52
+  orig: 70, 70
+  offset: 38, 4
+  index: -1
+reflection_34
+  rotate: true
+  xy: 58, 141
+  size: 25, 51
+  orig: 70, 70
+  offset: 42, 4
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 409
+  size: 141, 142
+  orig: 145, 146
+  offset: 2, 2
+  index: -1
+texas
+  rotate: false
+  xy: 2, 274
+  size: 132, 133
+  orig: 136, 140
+  offset: 0, 7
+  index: -1
