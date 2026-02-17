@@ -2,14 +2,15 @@ import createContainer from "../utils/CreateConatiner";
 import {Application,Container,Graphics,BlurFilter} from "pixi.js";
 import Tween from "../utils/Tween"
 import type { ReelData } from "../utils/ReelData";
-
-
+import "@esotericsoftware/spine-pixi-v8";
+import { Spine } from "@esotericsoftware/spine-pixi-v8";
+import delay from  "../utils/asyncHandler"
 
 class CreateReels extends Container {
     private masky:Graphics
     private slotContainer:Container
     private slotArr:createContainer[]
-
+     private win:any
     public Tween:Tween
     private reels: ReelData[]=[]
 
@@ -52,6 +53,30 @@ class CreateReels extends Container {
 
         this.Tween=new Tween(app,this.symbol,this.reels,this.tweening)
 
+         this.win=Spine.from({
+            skeleton: "commendations.json",
+            atlas: "commendations.atlas"
+      })
+      
+
+        this.Tween.on('mega',()=>{
+            this.commodation('Mega_win_in','Mega_win_loop','Mega_win_out')
+
+        })
+        this.Tween.on('ultra',()=>{
+             this.commodation('Ultra_win_in','Ultra_win_loop','Ultra_win_out')
+           
+           
+            
+        })
+        this.Tween.on('big',()=>{
+             this.commodation('Big_win_in','Big_win_loop','Big_win_out')
+        })
+        window.addEventListener('click',()=>{
+           
+        this.removeChild(this.win)
+       })
+
     }
     public buildReels(frame:createContainer) {
         this.addChild(this.slotContainer)
@@ -59,9 +84,23 @@ class CreateReels extends Container {
         this.buildMask(frame)
         this.Tween.addTicker()
     }
+
+
+    public async  commodation(commoin:string,commoloop:string,commoout:string){
+         this.addChild(this.win)
+            this.win.state.setAnimation(0,commoin,false)
+            await delay(1000)
+            this.win.state.setAnimation(0,commoloop,true)
+            await delay(3000)
+            this.win.state.setAnimation(0,commoout,false)
+            //await delay(400)
+            this.removeChild(this.win)
+            
+
+    }
     
     private buildMask(frame:createContainer){
-        this.masky.rect(0,0,frame.width,frame.height).fill(0x000000)
+        this.masky.rect(0,0,frame.width,frame.height-15).fill(0x000000)
 
         this.masky.pivot.set(this.masky.width/2,this.masky.height/2+5)
 

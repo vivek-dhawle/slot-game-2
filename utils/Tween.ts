@@ -21,6 +21,10 @@ class Tween extends createContainer{
 
     public phaseFlag=false
 
+   
+
+    private maxWin:number=0
+
     private winarr:number[]=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
     private winLines = [
         // [1,6,11],
@@ -59,6 +63,7 @@ class Tween extends createContainer{
 
 
         [0,1,2,3,4],
+        [0,1,2],
         [5,6,7],
         [5,6,7,8],
         [5,6,7,8,9],
@@ -77,23 +82,23 @@ class Tween extends createContainer{
         [
             [1, 10, 10],
             [1, 10, 5],
-            [10, 10, 8],
+            [1, 10, 8],
             [9, 10, 5],
             [1, 2, 10],
         ],[
 
             [1, 11, 10],
             [1, 11, 5],
-            [10, 11, 8],
+            [1, 11, 8],
             [9, 11, 5],
             [1, 2, 11],
 
         ],[
-            [1, 12, 12],
-            [1, 12, 5],
-            [10, 12, 8],
-            [9, 12, 5],
-            [1, 2, 12],
+            [1, 1, 1],
+            [1, 1, 5],
+            [1, 1, 8],
+            [9, 1, 5],
+            [1, 2, 1],
         ]
     ]
 
@@ -108,6 +113,8 @@ class Tween extends createContainer{
         this.symbol=symbol
         this.reels=reels
         this.tweening=tweening
+
+     
     }
 
     public genWinArr(){
@@ -140,6 +147,7 @@ class Tween extends createContainer{
                 }
             }
             if(win){
+                this.maxWin=Math.max(this.maxWin,this.winLines[j].length)
                 arr.push(this.winLines[j])
                 console.log(arr)
             }
@@ -189,7 +197,21 @@ class Tween extends createContainer{
             setTimeout(()=>{this.setWinLine(winLine,1,1)},time)
         })
         
-        setTimeout(()=>{this.setAlpha(1)},time)
+        setTimeout(()=>{this.setAlpha(1)
+            if(this.maxWin>=5){
+            this.emit('ultra')
+            
+            }else if(this.maxWin>=4){
+                this.emit('mega')
+                
+            }else if(this.maxWin>=3){
+                this.emit('big')
+            
+            }
+        },time)
+        
+        
+        
 
     }
 

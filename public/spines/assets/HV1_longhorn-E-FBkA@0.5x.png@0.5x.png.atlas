@@ -1,0 +1,55 @@
+
+HV1_longhorn-Mm0axg@0.5x@0.5x.png
+size: 290,43
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body2
+  rotate: false
+  xy: 53, 0
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+ear_L2
+  rotate: false
+  xy: 106, 0
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+ear_R2
+  rotate: false
+  xy: 159, 0
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+flare2
+  rotate: true
+  xy: 212, 1
+  size: 41, 38
+  orig: 50, 43
+  offset: 8, 0
+  index: -1
+frame
+  rotate: false
+  xy: 251, 8
+  size: 39, 34
+  orig: 52, 43
+  offset: 6, 4
+  index: -1
+head2
+  rotate: false
+  xy: 0, 0
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+star_glow
+  rotate: true
+  xy: 251, 1
+  size: 6, 6
+  orig: 7, 6
+  offset: 0, 0
+  index: -1

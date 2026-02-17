@@ -1,0 +1,27 @@
+
+spin_button-iYNPDw@0.5x@0.5x.png
+size: 112,84
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Shine
+  rotate: false
+  xy: 85, 42
+  size: 5, 14
+  orig: 16, 16
+  offset: 5, 0
+  index: -1
+glow2
+  rotate: false
+  xy: 1, 1
+  size: 83, 82
+  orig: 83, 82
+  offset: 0, 0
+  index: -1
+spin-btn_normal
+  rotate: false
+  xy: 85, 57
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1

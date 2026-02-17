@@ -1,0 +1,20 @@
+
+transition-oVbbzQ@0.5x@0.5x.webp
+size: 141,51
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dust_r
+  rotate: false
+  xy: 82, 0
+  size: 58, 50
+  orig: 63, 52
+  offset: 4, 0
+  index: -1
+dust_st
+  rotate: false
+  xy: 0, 10
+  size: 81, 40
+  orig: 82, 42
+  offset: 0, 2
+  index: -1

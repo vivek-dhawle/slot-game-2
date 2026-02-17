@@ -4,16 +4,17 @@ import { Assets } from 'pixi.js';
 class createContainer extends Container{
     private sprite:Sprite|null
     private bounds:any
-    constructor(texture?:string|null){
+    constructor(texture?:string|any){
         super()
         this.sprite=null
-        if (texture) {
+        if (texture&&typeof texture === 'string') {
            
             this.sprite=Sprite.from( Assets.get(texture))
             this.sprite.anchor.set(0.5);
             //this.sprite.scale.set(0.5)
             this.addChild(this.sprite)
         }
+        
         
         
         this.bounds=this.getLocalBounds()

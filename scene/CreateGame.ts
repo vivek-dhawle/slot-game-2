@@ -1,10 +1,13 @@
 import createContainer from "../utils/CreateConatiner.ts";
 
 import Transitions from '../utils/Transitions.ts'
-import { Container,Text,Application} from "pixi.js";
+import { Container,Text,Application,BitmapText,BitmapFont,Assets} from "pixi.js";
 import Account from '../utils/accounts.ts'
 import CreateReels from './CreateReels.ts'
 import fetchBal from '../utils/api.ts'
+import "@esotericsoftware/spine-pixi-v8";
+import { Spine } from "@esotericsoftware/spine-pixi-v8";
+
 class createGame extends Container{
     private reelContainer
     private playBtn:createContainer
@@ -27,6 +30,18 @@ class createGame extends Container{
     private turboState:{value:boolean}={value:true}
     private reels:CreateReels
     private app:Application
+    private logo:createContainer
+    private logoSpine:any
+    private majorSpine:any
+    private miniSpine:any
+    private minorSpine:any
+    private grandSpine:any
+
+    private majorText:any
+    private miniText:any
+    private minorText:any
+    private grandText:any
+    
 
     constructor(app:Application){
         super()
@@ -48,6 +63,84 @@ class createGame extends Container{
         this.app=app
         this.balance=new createContainer()
         this.stake=new createContainer()
+        this.logo=new createContainer()
+
+   
+
+       
+    }
+
+
+    private async topPanel  (){
+         this.logoSpine=Spine.from({
+            skeleton:"logo.json",atlas:"logo.atlas"
+        })
+       this.majorSpine=Spine.from({
+        skeleton:"jackpot.json",atlas:"jackpot.atlas"
+       })
+
+        this.miniSpine=Spine.from({
+        skeleton:"jackpot.json",atlas:"jackpot.atlas"
+       })
+        this.minorSpine=Spine.from({
+        skeleton:"jackpot.json",atlas:"jackpot.atlas"
+       })
+        this.grandSpine=Spine.from({
+        skeleton:"jackpot.json",atlas:"jackpot.atlas"
+       })
+
+       
+       this.majorText=new BitmapText(`$${this.val*2000}`,{fontFamily:'bitmap-export',fontSize:50,fill:0xD1A14A,fontWeight:'bold'})
+       
+       this.miniText=new BitmapText(`$${this.val*20}`,{fontFamily:'bitmap-export',fontSize:50,fill:0xD1A14A,fontWeight:'bold'})
+       this.minorText=new BitmapText(`$${this.val*100}`,{fontFamily:'bitmap-export',fontSize:50,fill:0xD1A14A,fontWeight:'bold'})
+       this.grandText=new BitmapText(`$${this.val*5000}`,{fontFamily:'bitmap-export',fontSize:50,fill:0xD1A14A,fontWeight:'bold'})
+
+
+       this.majorSpine.addChild(this.majorText)
+       this.minorSpine.addChild(this.minorText)
+
+       this.grandSpine.addChild(this.grandText)
+       this.miniSpine.addChild(this.miniText)
+
+
+       this.miniText.anchor.set(0.5,0);
+        this.minorText.anchor.set(0.5,0);
+         this.majorText.anchor.set(0.5,0);
+          this.grandText.anchor.set(0.5,0);
+
+
+       this.reelContainer.addChild(this.logo)
+        this.logo.position.set(0,-0.9*this.reelContainer.height)
+
+        this.logo.scale.set(1,1.1)
+
+
+        this.grandSpine.position.set(-1.1*this.logoSpine.width,0)
+        this.majorSpine.position.set(-0.7*this.logoSpine.width,0)
+        
+        this.minorSpine.position.set(0.7*this.logoSpine.width,0)
+        this.miniSpine.position.set(1.1*this.logoSpine.width,0)
+
+       
+
+
+        this.logoSpine.state.setAnimation(0,'animation',false)
+         this.majorSpine.state.setAnimation(0,'major',false)
+          this.miniSpine.state.setAnimation(0,'mini',false)
+           this.minorSpine.state.setAnimation(0,'minor',false)
+            this.grandSpine.state.setAnimation(0,'grand',false)
+
+       this.logo.addChild(this.logoSpine,this.majorSpine,this.miniSpine,this.minorSpine,this.grandSpine)
+
+       setInterval(()=>{
+            this.logoSpine.state.setAnimation(0,'animation',false)
+            this.majorSpine.state.setAnimation(0,'major',false)
+            this.miniSpine.state.setAnimation(0,'mini',false)
+           this.minorSpine.state.setAnimation(0,'minor',false)
+            this.grandSpine.state.setAnimation(0,'grand',false)
+        },5000)
+        
     }
 
     private buildPlayPanelButton(){
@@ -179,21 +272,32 @@ class createGame extends Container{
             this.val+=20
             this.stakeValue.text=`$${this.val}\n stake`
             //this.deccState.value=true
-            
+            this.majorText=`$${this.val*2000}`
+       
+            this.miniText.text=`$${this.val*20}`
+            this.minorText.text=`$${this.val*100}`
+            this.grandText.text=`$${this.val*5000}`
+                    
             if(this.val>=20)this.decStake.changeTexture('minusIcon_normal.png')
         })
 
 
         this.transit.clickTransition(this.decStake,'minusIcon_normal.png','minusIcon_normal.png',{value:true},()=>{
             
-             if(this.val-20<=0||this.val<=0){
+             if(this.val-20<=20||this.val<=20){
                 this.decStake.changeTexture('minusIcon_disabled.png')
                 
             }
-            if(this.val<=0)return
+            if(this.val<=20)return
             
             this.val-=20
             this.stakeValue.text=`$${this.val}\n stake`
+
+            this.majorText=`$${this.val*2000}`
+       
+            this.miniText.text=`$${this.val*20}`
+            this.minorText.text=`$${this.val*100}`
+            this.grandText.text=`$${this.val*5000}`
             
             if(this.val<=80)this.incStake.changeTexture('plusIcon_normal.png')
 
@@ -214,6 +318,31 @@ class createGame extends Container{
         this.buildPlayPanelButton()
         this.buildAccountPanel()
         this.buildStakePanel()
+        this.topPanel()
+
+
+        
+
+
+
+        
+        
+
+
+
+
+        // const long= Spine.from(
+        //     { skeleton: "HV1_longhorn.json", atlas: "HV1_longhorn.atlas" }
+        // )
+        // long.state.setAnimation(1, "animation", false)
+        //   console.log(long.state.tracks);
+
+        //   long.eventMode='static'
+        //   long.on("pointerdown", () => {
+        //     long.state.setAnimation(1, "animation", false);
+        //     long.state.addAnimation(1, "animation", true, 0);
+        // });
+        // this.addChild(long)
 
 
         

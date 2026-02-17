@@ -1,0 +1,223 @@
+
+glow-L70W3Q@0.5x.png
+size: 95,95
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin_shine_00
+  rotate: false
+  xy: 12, 60
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_01
+  rotate: false
+  xy: 0, 59
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_02
+  rotate: false
+  xy: 24, 60
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_03
+  rotate: false
+  xy: 25, 84
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_04
+  rotate: false
+  xy: 25, 72
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_05
+  rotate: false
+  xy: 35, 60
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_06
+  rotate: false
+  xy: 37, 84
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_07
+  rotate: false
+  xy: 37, 72
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_08
+  rotate: false
+  xy: 35, 48
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_09
+  rotate: false
+  xy: 0, 47
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_10
+  rotate: false
+  xy: 12, 48
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_11
+  rotate: false
+  xy: 24, 48
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_12
+  rotate: false
+  xy: 35, 37
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_13
+  rotate: false
+  xy: 0, 35
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_14
+  rotate: true
+  xy: 13, 83
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_15
+  rotate: true
+  xy: 13, 71
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_16
+  rotate: true
+  xy: 0, 71
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_17
+  rotate: false
+  xy: 12, 36
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_18
+  rotate: false
+  xy: 24, 36
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_19
+  rotate: false
+  xy: 35, 25
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_20
+  rotate: false
+  xy: 0, 24
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_21
+  rotate: false
+  xy: 12, 24
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_22
+  rotate: false
+  xy: 24, 24
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_23
+  rotate: false
+  xy: 35, 13
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_24
+  rotate: false
+  xy: 0, 12
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_25
+  rotate: false
+  xy: 12, 13
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_26
+  rotate: false
+  xy: 24, 13
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_27
+  rotate: false
+  xy: 35, 1
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_28
+  rotate: false
+  xy: 0, 0
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+coin_shine_29
+  rotate: false
+  xy: 12, 1
+  size: 11, 11
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+glow
+  rotate: false
+  xy: 0, 83
+  size: 12, 12
+  orig: 13, 13
+  offset: 0, 0
+  index: -1

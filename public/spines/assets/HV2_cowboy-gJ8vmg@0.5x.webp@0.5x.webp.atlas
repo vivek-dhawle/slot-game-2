@@ -1,0 +1,62 @@
+
+HV2_cowboy-RkEJ-Q@0.5x.webp
+size: 126,38
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+flare
+  rotate: false
+  xy: 0, 0
+  size: 40, 37
+  orig: 40, 38
+  offset: 0, 0
+  index: -1
+frame
+  rotate: false
+  xy: 41, 3
+  size: 39, 34
+  orig: 40, 36
+  offset: 0, 0
+  index: -1
+horse
+  rotate: false
+  xy: 108, 16
+  size: 17, 22
+  orig: 17, 24
+  offset: 0, 0
+  index: -1
+inside
+  rotate: true
+  xy: 81, 8
+  size: 30, 26
+  orig: 30, 26
+  offset: 0, 0
+  index: -1
+leg_F_L
+  rotate: false
+  xy: 89, 1
+  size: 5, 6
+  orig: 5, 6
+  offset: 0, 0
+  index: -1
+leg_F_R
+  rotate: false
+  xy: 96, 1
+  size: 4, 6
+  orig: 4, 6
+  offset: 0, 0
+  index: -1
+leg_R_R
+  rotate: true
+  xy: 81, 2
+  size: 5, 8
+  orig: 5, 8
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 101, 1
+  size: 6, 4
+  orig: 6, 5
+  offset: 0, 0
+  index: -1

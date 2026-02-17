@@ -9,7 +9,7 @@ import AssetsLoader from '../utils/AssetLoader.ts'
 await AssetsLoader.loadBg()
 await AssetsLoader.loadIntro()
 await AssetsLoader.loadGame()
-
+await AssetsLoader.loadSpines()
 const Buildapp:BuildApp=new BuildApp()
 
 

@@ -1,0 +1,132 @@
+
+LV_k-SgMiXA@0.5x@0.5x.webp
+size: 43,76
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+k
+  rotate: true
+  xy: 0, 52
+  size: 22, 27
+  orig: 23, 27
+  offset: 0, 0
+  index: -1
+k_edge
+  rotate: true
+  xy: 0, 30
+  size: 22, 25
+  orig: 22, 25
+  offset: 0, 0
+  index: -1
+ref_k_00
+  rotate: true
+  xy: 15, 0
+  size: 5, 14
+  orig: 23, 21
+  offset: 5, 4
+  index: -1
+ref_k_01
+  rotate: true
+  xy: 0, 6
+  size: 6, 14
+  orig: 23, 21
+  offset: 5, 3
+  index: -1
+ref_k_02
+  rotate: true
+  xy: 0, 13
+  size: 7, 14
+  orig: 23, 21
+  offset: 5, 3
+  index: -1
+ref_k_03
+  rotate: true
+  xy: 0, 21
+  size: 8, 14
+  orig: 23, 21
+  offset: 5, 3
+  index: -1
+ref_k_04
+  rotate: true
+  xy: 26, 37
+  size: 9, 14
+  orig: 23, 21
+  offset: 5, 3
+  index: -1
+ref_k_05
+  rotate: true
+  xy: 28, 56
+  size: 9, 14
+  orig: 23, 21
+  offset: 6, 3
+  index: -1
+ref_k_06
+  rotate: true
+  xy: 28, 66
+  size: 9, 14
+  orig: 23, 21
+  offset: 6, 3
+  index: -1
+ref_k_07
+  rotate: true
+  xy: 28, 46
+  size: 9, 14
+  orig: 23, 21
+  offset: 7, 3
+  index: -1
+ref_k_08
+  rotate: true
+  xy: 26, 27
+  size: 8, 14
+  orig: 23, 21
+  offset: 8, 3
+  index: -1
+ref_k_09
+  rotate: false
+  xy: 15, 15
+  size: 8, 14
+  orig: 23, 21
+  offset: 9, 3
+  index: -1
+ref_k_10
+  rotate: true
+  xy: 15, 7
+  size: 7, 14
+  orig: 23, 21
+  offset: 10, 3
+  index: -1
+ref_k_11
+  rotate: true
+  xy: 24, 20
+  size: 6, 14
+  orig: 23, 21
+  offset: 11, 3
+  index: -1
+ref_k_12
+  rotate: false
+  xy: 31, 0
+  size: 5, 14
+  orig: 23, 21
+  offset: 12, 3
+  index: -1
+ref_k_13
+  rotate: true
+  xy: 0, 0
+  size: 5, 14
+  orig: 23, 21
+  offset: 12, 3
+  index: -1
+ref_k_14
+  rotate: true
+  xy: 24, 15
+  size: 4, 13
+  orig: 23, 21
+  offset: 13, 3
+  index: -1
+ref_k_15
+  rotate: false
+  xy: 38, 6
+  size: 3, 13
+  orig: 23, 21
+  offset: 14, 4
+  index: -1
